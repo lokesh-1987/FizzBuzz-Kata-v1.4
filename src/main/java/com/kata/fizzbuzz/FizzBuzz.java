@@ -1,11 +1,15 @@
 package com.kata.fizzbuzz;
 
 class FizzBuzz {
+
+    private static final String FIZZ = "Fizz";
+    private static final String BUZZ = "Buzz";
+
     String getFizzBuzz(int number) {
         if(number % 3 == 0) {
-            return "Fizz";
+            return FIZZ;
         } else if(number % 5 == 0) {
-            return "Buzz";
+            return BUZZ;
         }
         return String.valueOf(number);
     }
