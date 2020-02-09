@@ -8,6 +8,7 @@ import static org.junit.Assert.assertThat;
 
 public class FizzBuzzTest {
 
+    private static final String FIZZ_BUZZ = "FizzBuzz";
     private static final String ONE = "1";
     private static final String TWO = "2";
     private static final String FIZZ = "Fizz";
@@ -51,6 +52,6 @@ public class FizzBuzzTest {
 
     @Test
     public void fizzBuzzShouldReturnFizzBuzzFor15() {
-        assertThat(fizzBuzz.getFizzBuzz(15), is("FizzBuzz"));
+        assertThat(fizzBuzz.getFizzBuzz(15), is(FIZZ_BUZZ));
     }
 }
